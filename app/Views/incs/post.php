@@ -14,6 +14,8 @@
     
     <a href="<?= url_to('blog_edit', $post['id'])?>" class="btn btn-success">edit</a>
 
+    <a href="<?= url_to('blog_delete', $post['id'])?>" class="btn btn-danger">delete</a>
+
 
 
   </div>
@@ -23,4 +25,4 @@
 </div>
 
 
-
+<!-- урок 17 - 04:55 -->

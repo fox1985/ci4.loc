@@ -10,6 +10,14 @@ class BlogModel extends Model
     protected $primaryKey = 'id';
 
     protected $allowedFields = ['title', 'excerpt', 'content'];
+    
+    protected $useSoftDeletes =true;
+     // Dates
+     protected $useTimestamps = true;
+     protected $dateFormat    = 'datetime';
+     protected $createdField  = 'created_at';
+     protected $updatedField  = 'updated_at';
+     protected $deletedField  = 'deleted_at';
    
     
 }

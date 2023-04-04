@@ -100,4 +100,16 @@ class Blog extends BaseController
 
     }
 
+    public function delete($id)
+    {
+        $post = $this->blogModel->find($id);
+
+        if(!$post){
+            throw PageNotFoundException::forPageNotFound();
+        }
+
+        $this->blogModel->delete($id);
+        return redirect('blog_index');
+    }
+
 }
