@@ -78,7 +78,7 @@ class Blog extends BaseController
 
         $data = [
             'title' => "Редактирование записи: {$post['title']}",
-            'post' => esc($post),
+            'post' => $post,
         ];
 
         return view('blog/edit', $data);
