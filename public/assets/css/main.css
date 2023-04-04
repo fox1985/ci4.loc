@@ -1,0 +1,22 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card{
+    margin: 20px 0;
+}
+
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+
+.my_bg{
+    background-color:gray;
+    padding-top: 10px;
+    border-radius: 10px;
+
+}

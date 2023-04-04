@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="E:\OpenServer\domains\localhost\ci4.loc\ci4.loc.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/E:/OpenServer/domains/localhost/ci4.loc]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/E:/OpenServer/domains/localhost/ci4.loc]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+  <PM_LANGUAGE><![CDATA[]]></PM_LANGUAGE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <file name="E:\OpenServer\domains\localhost\ci4.loc\app\Config\Routes.php"/>
+  <file name="E:\OpenServer\domains\localhost\ci4.loc\app\Controllers\Page.php"/>
+  <file name="E:\OpenServer\domains\localhost\ci4.loc\app\Controllers\Home.php"/>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <errors version="1.12.0"/>
+ <cakedata/>
+ <dplmenupath/>
+ <laravael/>
+ <smartyassings/>
+ <twigtemplate/>
+ <yiidata/>
+ <todoblock>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Cache\Handlers\FileHandler.php">
+   <todo name="TODO This will return null in a future release" pos="28;209"/>
+   <todo name="@TODO This will return null in a future release" pos="27;209"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Cache\Handlers\MemcachedHandler.php">
+   <todo name="TODO This will return null in a future release" pos="28;249"/>
+   <todo name="@TODO This will return null in a future release" pos="27;249"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Cache\Handlers\WincacheHandler.php">
+   <todo name="TODO This will return null in a future release" pos="24;134"/>
+   <todo name="@TODO This will return null in a future release" pos="23;134"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Config\Services.php">
+   <todo name="TODO remove the following code for backward compatibility" pos="10;499"/>
+   <todo name="@TODO remove the following code for backward compatibility" pos="9;499"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Database\BaseBuilder.php">
+   <todo name="TODO remove alias if exists" pos="46;316"/>
+   <todo name="@TODO remove alias if exists" pos="45;316"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Database\BaseConnection.php">
+   <todo name="todo work with read/write connections" pos="10;476"/>
+   <todo name="@todo work with read/write connections" pos="9;476"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Database\BaseUtils.php">
+   <todo name="TODO gzencode() requires `ext-zlib`, but _backup() is not implemented in all databases." pos="10;311"/>
+   <todo name="@TODO gzencode() requires `ext-zlib`, but _backup() is not implemented in all databases." pos="9;311"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Database\OCI8\Forge.php">
+   <todo name="todo: can’t cover multi pattern when set type." pos="10;182"/>
+   <todo name="@todo: can’t cover multi pattern when set type." pos="9;182"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Debug\Exceptions.php">
+   <todo name="TODO remove this after dropping PHP 8.1 support." pos="10;85"/>
+   <todo name="@TODO remove this after dropping PHP 8.1 support." pos="9;85"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php">
+   <todo name="todo: depend super global" pos="10;164"/>
+   <todo name="@todo: depend super global" pos="9;164"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\HTTP\IncomingRequest.php">
+   <todo name="TODO remove this. The path of the URI object should be a full URI path," pos="10;454"/>
+   <todo name="@TODO remove this. The path of the URI object should be a full URI path," pos="9;454"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\HTTP\RequestTrait.php">
+   <todo name="TODO Extract all this IP address logic to another class." pos="14;81"/>
+   <todo name="@TODO Extract all this IP address logic to another class." pos="13;81"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\HTTP\Response.php">
+   <todo name="todo Remove this fallback when deprecated `App` members are removed" pos="14;175"/>
+   <todo name="@todo Remove this fallback when deprecated `App` members are removed" pos="13;175"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Helpers\cookie_helper.php">
+   <todo name="TODO Remove Config\App fallback when deprecated `App` members are removed." pos="14;73"/>
+   <todo name="@TODO Remove Config\App fallback when deprecated `App` members are removed." pos="13;73"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Log\Handlers\ChromeLoggerHandler.php">
+   <todo name="todo Modify formatting of objects once we can view them in browser." pos="10;140"/>
+   <todo name="@todo Modify formatting of objects once we can view them in browser." pos="9;140"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Log\Logger.php">
+   <todo name="todo - sanitize input before writing to file" pos="13;331"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Pager\Pager.php">
+   <todo name="todo determine based on a 'surroundCount' value" pos="10;250"/>
+   <todo name="@todo determine based on a 'surroundCount' value" pos="9;250"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Router\RouteCollection.php">
+   <todo name="todo determine if there's a way to whitelist hosts" pos="14;1317"/>
+   <todo name="@todo determine if there's a way to whitelist hosts" pos="13;1317"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Session\Handlers\BaseHandler.php">
+   <todo name="TODO Remove this fallback when deprecated `App` members are removed." pos="14;133"/>
+   <todo name="@TODO Remove this fallback when deprecated `App` members are removed." pos="13;133"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\codeigniter4\framework\system\Test\Mock\MockConnection.php">
+   <todo name="todo deal with errors" pos="14;76"/>
+   <todo name="@todo deal with errors" pos="13;76"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\fakerphp\faker\src\Faker\ORM\CakePHP\EntityPopulator.php">
+   <todo name="TODO check if TreeBehavior attached to modify lft/rgt cols" pos="9;121"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\fakerphp\faker\src\Faker\Provider\Base.php">
+   <todo name="TODO: remove in v2" pos="9;594"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\fakerphp\faker\src\Faker\Provider\kk_KZ\Address.php">
+   <todo name="TODO list all country names in the world" pos="5;15"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\nikic\php-parser\lib\PhpParser\Comment.php">
+   <todo name="TODO: Rename these to include &quot;start&quot;." pos="13;229"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\nikic\php-parser\lib\PhpParser\Internal\TokenStream.php">
+   <todo name="TODO Handle non-space indentation" pos="21;244"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\nikic\php-parser\lib\PhpParser\Lexer\TokenEmulator\AttributeEmulator.php">
+   <todo name="TODO" pos="9;41"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\nikic\php-parser\lib\PhpParser\PrettyPrinterAbstract.php">
+   <todo name="TODO Add &lt;" pos="13;496"/>
+   <todo name="TODO: Try to preserve formatting" pos="17;727"/>
+   <todo name="TODO: Preserve formatting." pos="25;779"/>
+   <todo name="TODO: Preserve formatting." pos="25;883"/>
+   <todo name="TODO: Support removing single node." pos="13;906"/>
+   <todo name="TODO: FIXUP_NEW_VARIABLE" pos="52;1173"/>
+   <todo name="TODO: FIXUP_NEW_VARIABLE" pos="69;1184"/>
+   <todo name="TODO: &quot;yield&quot; where both key and value are inserted doesn't work" pos="9;1306"/>
+   <todo name="TODO" pos="86;1334"/>
+   <todo name="TODO These need to be treated more carefully" pos="47;1350"/>
+   <todo name="TODO Insertion into empty statement lists." pos="9;1442"/>
+   <todo name="TODO" pos="14;1490"/>
+   <todo name="TODO" pos="67;1511"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\nikic\php-parser\lib\PhpParser\PrettyPrinter\Standard.php">
+   <todo name="TODO: This is not fully accurate." pos="9;1078"/>
+  </todofile>
+  <todofile name="E:\OpenServer\domains\localhost\ci4.loc\vendor\phpunit\php-code-coverage\src\StaticAnalysis\CodeUnitFindingVisitor.php">
+   <todo name="todo Handle default values" pos="15;156"/>
+   <todo name="@todo Handle default values" pos="14;156"/>
+  </todofile>
+ </todoblock>
+ <dbgurls/>
+ <lasttime value="1680283593"/>
+</project>
