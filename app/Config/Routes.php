@@ -39,6 +39,9 @@ $routes->setAutoRoute(false);
 $routes->get('/', 'Main::index');
 
 
+$routes->match(['post', 'get'], 'test', 'Main::test', ['as' => 'main_test']);
+
+
 $routes->get('blog/create', 'Blog::create', ['as' => 'blog_create']);
 
 $routes->post('blog/store','Blog::store');

@@ -12,8 +12,13 @@
       
       <li class="nav-item">
         <a class="nav-link <?php echo ( base_url('blog/create') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('blog/create') ?>">Добавить запись</a>
-        </li>
+      </li>
        
+
+      <li class="nav-item">
+        <a class="nav-link <?php echo ( base_url('test') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('test') ?>">Test Form</a>
+      </li>
+
       </ul>
      
     </div>
