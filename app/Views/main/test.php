@@ -24,12 +24,16 @@
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" name="name" class="form-control <?= isset($errors_data['name']) ? 'is-invalid' : '' ?>" id="name" value="<?= old('name') ?>">
+                    <input type="text" name="name" class="form-control <?= add_error_class($errors_data, 'name') ?>" id="name" value="<?= old('name') ?>">
+                    
+                    <?= display_error($errors_data, 'name')?>
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="text" name="email" class="form-control <?= isset($errors_data['email']) ? 'is-invalid' : '' ?>" id="email" value="<?= old('email') ?>">
+                    <input type="text" name="email" class="form-control <?= add_error_class($errors_data, 'email') ?>" id="email" value="<?= old('email') ?>">
+
+                    <?= display_error($errors_data, 'email')?>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Send</button>

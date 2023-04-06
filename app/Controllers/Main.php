@@ -35,6 +35,8 @@ class Main extends BaseController
 
     public function test()
     {
+        helper('form');
+
         $rules = [
             'name'  => 'required',
             'email' => 'valid_email',
