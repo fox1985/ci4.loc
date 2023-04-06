@@ -19,6 +19,12 @@
         <a class="nav-link <?php echo ( base_url('test') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('test') ?>">Test Form</a>
       </li>
 
+
+      <li class="nav-item">
+        <a class="nav-link <?php echo ( base_url('test2') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('test2') ?>">Test Form2</a>
+      </li>
+
+
       </ul>
      
     </div>

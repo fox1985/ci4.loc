@@ -41,6 +41,12 @@ $routes->get('/', 'Main::index');
 
 $routes->match(['post', 'get'], 'test', 'Main::test', ['as' => 'main_test']);
 
+$routes->match(['post', 'get'], 'test2', 'Main::test2', ['as' => 'main_test2']);
+
+
+
+
+
 
 $routes->get('blog/create', 'Blog::create', ['as' => 'blog_create']);
 

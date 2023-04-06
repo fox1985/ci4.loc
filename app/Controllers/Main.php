@@ -4,6 +4,7 @@
 namespace App\Controllers;
 
 use App\Models\CountryModel;
+use App\Models\TestModel;
 use Config\Database;
 
 class Main extends BaseController
@@ -55,6 +56,32 @@ class Main extends BaseController
     
         }
         return view('main/test', $data);
+    }
+
+
+    public function test2()
+    {
+        
+        helper('form');
+
+        $rules = [
+            'name'  => 'required',
+            'email' => 'valid_email',
+        ];
+
+        $data = ['title' => 'Тестовая форма для валидации 2'];
+
+        if ($this->request->getMethod() == 'post') {
+           $testModel = new TestModel();
+
+           if(!$testModel->insert($this->request->getPost())){
+                return redirect()->route('main_test2')->withInput()->with('errors', 
+                $testModel->errors());
+           }
+           return redirect()->route('main_test2')->with('success', 'От правлино письмо');
+    
+        }
+        return view('main/test2', $data);
     }
 
 
