@@ -43,14 +43,14 @@ class Main extends BaseController
 
         if ($this->request->getMethod() == 'post') {
             if(!$this->validate($rules)){
-                $data['validation'] = $this->validator;
+                return redirect()->route('main_test')->withInput()->with('errors', $this->validator);
                
             }
             else{
-                echo "OK";
+                return redirect()->route('main_test')->with('success', 'От правлино письмо');
             }
 
-            //d($this->request->getPost());
+    
         }
         return view('main/test', $data);
     }
