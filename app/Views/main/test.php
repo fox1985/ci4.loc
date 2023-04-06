@@ -17,7 +17,7 @@
             $errors = session()->has('errors') ? session()->getFlashdata('errors') : '';
             $errors_data = $errors ? $errors->getErrors() : [];
             d($errors_data);
-            echo $errors ? $errors->listErrors() : '';
+            echo $errors ? $errors->listErrors('my_list') : '';
             ?>
 
             <form action="<?= route_to('main.test') ?>" method="post">
