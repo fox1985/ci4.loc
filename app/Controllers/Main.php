@@ -149,7 +149,49 @@ class Main extends BaseController
        }
         return view('main/file-upload2', ['title' => 'File upload2']);
     }
-    
+
+
+
+
+
+    public function fileUpload3()
+    {
+        // мульти загрузка 
+        helper('form');
+        $rules = [
+            'name' => 'required',
+            'email' => 'valid_email',
+            'userfile' => 'uploaded[userfile.0]|max_size[userfile,1024]|ext_in[userfile,png,jpg,gif]',
+        ];
+
+        if ($this->request->getMethod() == 'post') {
+
+            if ($this->validate($rules)) {
+                $files = $this->request->getFiles();
+                $names = [];
+
+                foreach ($files['userfile'] as $file) {
+                    if ($file->isValid() && !$file->hasMoved()) {
+                        $f = date("Ymd");
+                        if ($file->move("uploads/{$f}", $n = $file->getRandomName())) {
+                            $names[] = "{$f}/$n";
+                        } else {
+                            return redirect()->route('main.fileupload3')->with('errors', ['Error moved file']);
+                        }
+                    }
+                }
+
+            } else {
+                return redirect()->route('main.fileupload3')->withInput()->with('errors', $this->validator->getErrors());
+            }
+
+            session()->setFlashdata('files', $names);
+            return redirect()->route('main.fileupload3')->with('success', 'Success');
+
+        }
+
+        return view('main/file-upload3', ['title' => 'File upload 3']);
+    }
 
 
 }
