@@ -47,6 +47,8 @@ $routes->match(['post', 'get'], 'test2', 'Main::test2', ['as' => 'main_test2']);
 
 $routes->match(['get', 'post'], 'file-upload', 'Main::fileUpload', ['as' => 'main.fileupload']);
 
+$routes->match(['get', 'post'], 'file-upload2', 'Main::fileUpload2', ['as' => 'main.fileupload2']);
+
 
 
 

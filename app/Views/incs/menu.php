@@ -29,6 +29,11 @@
       </li>
 
 
+      <li class="nav-item">
+        <a class="nav-link <?php echo ( base_url('file-upload2') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('file-upload2') ?>">Загрузка файла 2</a>
+      </li>
+
+
       </ul>
      
     </div>

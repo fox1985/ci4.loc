@@ -99,7 +99,7 @@ class Main extends BaseController
             if ($file->move("uploads/{$f}", $n= $file->getRandomName())) {
                 session()->setFlashdata('file', "{$f}/$n");
                 return redirect()->route('main.fileupload')->with('success', 'Файл загружин');
-                echo 'ok';
+            
             }
 
         }
@@ -108,6 +108,46 @@ class Main extends BaseController
         
        }
         return view('main/file-upload', ['title' => 'File upload']);
+    }
+
+
+
+    public function fileUpload2()
+    {
+        helper('form');
+        
+        $rules = [
+            'name'  => 'required',
+            'email' => 'valid_email',
+            'userfile' => 'uploaded[userfile]'
+        ];
+
+        // Загруска файла через форму
+       if ($this->request->getMethod() == 'post') {
+        $file = $this->request->getFile('userfile');
+        
+        //если прошла валидация 
+        if($this->validate($rules))
+        {
+            if ($file->isValid() && !$file->hasMoved())
+            {
+                $f = date("Ymd");
+                if ($file->move("uploads/{$f}", $n= $file->getRandomName())) {
+                    session()->setFlashdata('file', "{$f}/$n");
+                    return redirect()->route('main.fileupload2')->with('success', 'Файл загружин');
+                
+                }
+    
+            }
+           
+
+        }
+        else {
+              redirect()->route('main.fileupload2')->with('errors', $this->validator->getErrors());
+            }
+        
+       }
+        return view('main/file-upload2', ['title' => 'File upload2']);
     }
     
 
