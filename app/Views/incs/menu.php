@@ -24,6 +24,10 @@
         <a class="nav-link <?php echo ( base_url('test2') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('test2') ?>">Test Form2</a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link <?php echo ( base_url('file-upload') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('file-upload') ?>">Загрузка файла</a>
+      </li>
+
 
       </ul>
      

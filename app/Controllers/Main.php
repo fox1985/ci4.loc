@@ -85,4 +85,31 @@ class Main extends BaseController
     }
 
 
+    public function fileUpload()
+    {
+        // Загруска файла через форму
+       if ($this->request->getMethod() == 'post') {
+        $file = $this->request->getFile('userfile');
+        
+        if ($file->isValid() && !$file->hasMoved()){
+            // $f = $file->store();
+            // d($f);
+
+            $f = date("Ymd");
+            if ($file->move("uploads/{$f}", $n= $file->getRandomName())) {
+                session()->setFlashdata('file', "{$f}/$n");
+                return redirect()->route('main.fileupload')->with('success', 'Файл загружин');
+                echo 'ok';
+            }
+
+        }
+        // d($file->getName());
+        // d($file->getClientName());
+        
+       }
+        return view('main/file-upload', ['title' => 'File upload']);
+    }
+    
+
+
 }

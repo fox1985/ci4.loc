@@ -43,6 +43,9 @@ $routes->match(['post', 'get'], 'test', 'Main::test', ['as' => 'main_test']);
 
 $routes->match(['post', 'get'], 'test2', 'Main::test2', ['as' => 'main_test2']);
 
+// Загруска файла
+
+$routes->match(['get', 'post'], 'file-upload', 'Main::fileUpload', ['as' => 'main.fileupload']);
 
 
 
