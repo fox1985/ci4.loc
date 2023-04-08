@@ -43,6 +43,17 @@
       </li>
 
 
+      <li class="nav-item">
+        <a class="nav-link <?php echo ( base_url('user/login') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('user/login') ?>">Login</a>
+      </li>
+
+      <div class="d-flex">
+                <span class="text-light">
+                    Hello, <?= session()->has('name') ? esc(session()->get('name')) . ' | <a href="' . route_to('user.logout') . '">Logout</a>' : 'Guest' ?>
+                </span>
+            </div>
+
+
       </ul>
      
     </div>
