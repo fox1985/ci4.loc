@@ -39,6 +39,11 @@ $routes->setAutoRoute(false);
 $routes->get('/', 'Main::index');
 
 
+$routes->get('user/register','User::register', ['as' => 'user.register']);
+
+$routes->post('user/store','User::store', ['as' => 'user.store']);
+
+
 $routes->match(['post', 'get'], 'test', 'Main::test', ['as' => 'main_test']);
 
 $routes->match(['post', 'get'], 'test2', 'Main::test2', ['as' => 'main_test2']);
