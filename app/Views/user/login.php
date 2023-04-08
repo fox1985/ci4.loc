@@ -26,7 +26,7 @@
 
             <form action="<?= route_to('user.login') ?>" method="post">
 
-        
+            <?= csrf_field() ?>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>

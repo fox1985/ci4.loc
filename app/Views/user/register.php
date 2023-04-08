@@ -26,6 +26,8 @@
 
             <form action="<?= route_to('user.store') ?>" method="post">
 
+            <?= csrf_field() ?>
+
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control <?= add_error_class($errors_data, 'name') ?>" id="name" value="<?= old('name') ?>">

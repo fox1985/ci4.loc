@@ -16,6 +16,11 @@ class User extends BaseController
 
     public function register()
     {
+        // проверка афторизованого пользователя не пускает на форму регистрации 
+        if(session()->has('name'))
+        {
+            return redirect('admin.main');
+        }
         helper('form');
         return view('user/register', ['title' => 'Регистрация']);
     }
@@ -52,7 +57,7 @@ class User extends BaseController
 
             // If success validation AND login
             $this->setProfile($user);
-            return redirect()->route('user.login')->with('success', 'Success login');
+            return redirect()->route('admin.main')->with('success', 'Success login');
         }
 
         return view('user/login', ['title' => 'Login']);

@@ -47,14 +47,15 @@
         <a class="nav-link <?php echo ( base_url('user/login') === rtrim(current_url(), '/') ) ? 'active' : '' ?>" href="<?= base_url('user/login') ?>">Login</a>
       </li>
 
-      <div class="d-flex">
-                <span class="text-light">
-                    Hello, <?= session()->has('name') ? esc(session()->get('name')) . ' | <a href="' . route_to('user.logout') . '">Logout</a>' : 'Guest' ?>
-                </span>
-            </div>
-
-
       </ul>
+
+      <div class="d-flex">
+        <a href="<?= route_to('admin.main')?>">Admin </a>
+        <a href="<?= route_to('admin.main.test')?>"> Admin  Test</a>
+        <span class="text-light">
+            Hello, <?= session()->has('name') ? esc(session()->get('name')) . ' | <a href="' . route_to('user.logout') . '">Logout</a>' : 'Guest' ?>
+        </span>
+    </div>
      
     </div>
   </div>

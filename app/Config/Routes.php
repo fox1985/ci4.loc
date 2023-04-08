@@ -38,7 +38,16 @@ $routes->setAutoRoute(false);
 
 $routes->get('/', 'Main::index');
 
+$routes->group('admin', ['filter' => 'checkAuth'],  function($routes)
+{
+    $routes->get('/','Admin\Main::index', ['as' => 'admin.main']);
+    $routes->get('test','Admin\Main::test', ['as' => 'admin.main.test']);
+});
 
+
+
+
+//--------------------------------------------------------------------
 $routes->get('user/logout','User::logout', ['as' => 'user.logout']);
 
 $routes->get('user/register','User::register', ['as' => 'user.register']);
